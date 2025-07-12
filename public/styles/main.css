@@ -1,0 +1,60 @@
+.pirata-one-regular {
+  font-family: "Pirata One", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.lora-text {
+  font-family: "Lora", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+
+body {
+  background-color: #121212;
+}
+
+header {
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.title {
+  font-size: 5rem;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.deck {
+  height: 20rem;
+}
+
+.deck:hover {
+  cursor: pointer;
+  border: 2px solid rgba(250,250,250,0.5);
+}
+
+.user-cards, .computer-cards {
+  display: flex;
+  flex-direction: row;
+}
+
+.hidden {
+  display: none;
+}
+
+
+
