@@ -76,6 +76,7 @@ window.addEventListener("DOMContentLoaded", () => {
 
   document.querySelector("#draw").addEventListener("click", async () => {
     await getCard("draw", "user");
+    document.querySelector("#stand").classList.remove("hidden");
   });
 
   document.querySelector("#hit-me").addEventListener("click", async () => {
@@ -104,6 +105,7 @@ window.addEventListener("DOMContentLoaded", () => {
   });
 
   document.querySelector("#stand").addEventListener("click", async () => {
+    document.querySelector("#stand").classList.add("hidden")
     const computerCards = await getCard("stand", "computer");
   });
 });
