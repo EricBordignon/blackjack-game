@@ -17,12 +17,33 @@
 <body>
   <header>
     <h1 class="pirata-one-regular title">Blackjack</h1>
+    <h2 class = "pirata-one-regular sub-title">Click on DRAW to begin</h2>
   </header>
   <main>
-    <img src="images/Deck.png" class="deck" id="draw">
-    <img src="images/Hitme.png" class="deck hidden" id="hit-me">
-    <div class="user-cards"></div>
-    <div class="computer-cards"></div>
+    <main>
+  <section class="left-panel">
+    <div class="controls">
+      <img src="images/Deck.png" class="deck" id="draw">
+      <img src="images/Hitme.png" class="deck hidden" id="hit-me">
+      <img src="images/Playagain.png" class="deck hidden" id="play-again">
+      <img src="images/Wait.png" class="deck hidden" id="computer-turn">
+      <button id="stand" class="stand-btn">Stand</button>
+    </div>
+  </section>
+
+  <section class="right-panel">
+    <div class="user-section">
+      <h3 class="lora-text">Your Deck</h3>
+      <p id="user-points" class="points">Points: 0</p>
+      <div class="user-cards"></div>
+    </div>
+    <div class="computer-section">
+      <h3 class="lora-text">Computer Deck</h3>
+      <p id="computer-points" class="points">Points: 0</p>
+      <div class="computer-cards"></div>
+    </div>
+  </section>
+</main>
   </main>
   
 
